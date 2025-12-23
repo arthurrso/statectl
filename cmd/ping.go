@@ -4,10 +4,14 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"context"
 	"gdch-cli/internal/ping"
+	"time"
 
 	"github.com/spf13/cobra"
 )
+
+var verbose bool
 
 // pingCmd represents the ping command
 var pingCmd = &cobra.Command{
@@ -20,12 +24,16 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		return ping.Run()
+		ctx, cancel := context.WithTimeout(cmd.Context(), 3*time.Second)
+		defer cancel()
+		return ping.Run(ctx, verbose)
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(pingCmd)
+
+	pingCmd.Flags().BoolVar(&verbose, "verbose", false, "Enable verbose output")
 
 	// Here you will define your flags and configuration settings.
 
