@@ -85,3 +85,15 @@ func cloneInstance(in *domain.Instance) *domain.Instance {
 	out := *in
 	return &out
 }
+func (r *FakeInstanceRepository) List(ctx context.Context) ([]*domain.Instance, error) {
+	r.mu.RLock()
+	defer r.mu.RUnlock()
+
+	result := make([]*domain.Instance, 0, len(r.instances))
+
+	for _, inst := range r.instances {
+		result = append(result, cloneInstance(inst))
+	}
+
+	return result, nil
+}
