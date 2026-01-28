@@ -73,6 +73,10 @@ func (r *FakeInstanceRepository) Delete(ctx context.Context, name string) error 
 	r.mu.Lock()
 	defer r.mu.Unlock()
 
+	if _, ok := r.instances[name]; !ok {
+		return errors.New("instance not found")
+	}
+
 	delete(r.instances, name)
 	return nil
 }
