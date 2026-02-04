@@ -4,7 +4,7 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"gdch-cli/internal/version"
+	"statectl/internal/version"
 
 	"github.com/spf13/cobra"
 )

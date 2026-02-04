@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"context"
-	"gdch-cli/internal/ping"
+	"statectl/internal/ping"
 	"time"
 
 	"github.com/spf13/cobra"
