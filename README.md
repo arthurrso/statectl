@@ -1,4 +1,4 @@
-# gdch-cli
+# statectl
 
 Lightweight CLI to manage cloud instances — a small Go project that demonstrates a controller/service/domain/infra separation for experimenting with reconciliation logic and pluggable cloud providers.
 
@@ -21,21 +21,21 @@ Clone and build:
 
 ```bash
 git clone <your-repo-url>
-cd gdch-cli
+cd statectl
 go build ./...
 # or install to $GOBIN
 go install ./...
 ```
 
-Run the CLI (binary will be `gdch-cli` when installed or built in-place):
+Run the CLI (binary will be `statectl` when installed or built in-place):
 
 ```bash
 # show available commands
-./gdch-cli --help
+./statectl --help
 
 # example commands present in the repo
-./gdch-cli ping
-./gdch-cli version
+./statectl ping
+./statectl version
 ```
 
 ## Project layout
@@ -48,7 +48,7 @@ Run the CLI (binary will be `gdch-cli` when installed or built in-place):
 - `pkg/` — reusable packages intended for external use (if used)
 - `main.go` — program entry point
 
-Example domain types live in `internal/domain/gdch.go`. The controller and service code show how to assemble repository + cloud client implementations and perform reconciliation cycles.
+Example domain types live in `internal/domain/instance.go`. The controller and service code show how to assemble repository + cloud client implementations and perform reconciliation cycles.
 
 ## Testing
 
