@@ -25,7 +25,9 @@ func NewInstanceService(
 func (s *InstanceService) Create(ctx context.Context, name string, spec domain.InstanceSpec) error {
 	inst := &domain.Instance{
 		Name: name,
-		Spec: spec,
+		Spec: domain.InstanceSpec{
+			DesiredState: domain.DesiredRunning,
+		},
 	}
 
 	if err := s.repo.Create(ctx, inst); err != nil {
