@@ -2,7 +2,7 @@ package controller
 
 import (
 	"context"
-	"gdch-cli/internal/domain"
+	"statectl/internal/domain"
 )
 
 func (c *InstanceController) Reconcile(ctx context.Context, name string) error {

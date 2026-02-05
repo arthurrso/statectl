@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"gdch-cli/internal/domain"
+	"statectl/internal/domain"
 )
 
 type InstanceController struct {

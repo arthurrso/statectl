@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"gdch-cli/internal/domain"
+	"statectl/internal/domain"
 )
 
 type FakeInstanceRepository struct {

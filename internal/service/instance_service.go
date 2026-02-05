@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"gdch-cli/internal/controller"
-	"gdch-cli/internal/domain"
+	"statectl/internal/controller"
+	"statectl/internal/domain"
 )
 
 type InstanceService struct {

@@ -1,4 +1,4 @@
-module gdch-cli
+module statectl
 
 go 1.25.5
 

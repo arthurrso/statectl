@@ -2,8 +2,8 @@ package controller
 
 import (
 	"context"
-	"gdch-cli/internal/domain"
-	"gdch-cli/internal/infra/fake"
+	"statectl/internal/domain"
+	"statectl/internal/infra/fake"
 	"testing"
 )
 
