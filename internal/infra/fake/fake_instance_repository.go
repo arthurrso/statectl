@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/domain"
 )
 
 type FakeInstanceRepository struct {

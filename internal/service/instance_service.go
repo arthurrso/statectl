@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"statectl/internal/controller"
-	"statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/controller"
+	"github.com/arthurrso/statectl/internal/domain"
 )
 
 type InstanceService struct {

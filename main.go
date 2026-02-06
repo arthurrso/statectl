@@ -3,7 +3,7 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
-import "statectl/cmd"
+import "github.com/arthurrso/statectl/cmd"
 
 func main() {
 	cmd.Execute()

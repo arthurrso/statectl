@@ -2,7 +2,7 @@ package controller
 
 import (
 	"context"
-	"statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/domain"
 )
 
 func (c *InstanceController) Reconcile(ctx context.Context, name string) error {

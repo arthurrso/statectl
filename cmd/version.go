@@ -4,7 +4,7 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"statectl/internal/version"
+	"github.com/arthurrso/statectl/internal/version"
 
 	"github.com/spf13/cobra"
 )

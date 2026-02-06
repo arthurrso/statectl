@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/domain"
 )
 
 type InstanceController struct {

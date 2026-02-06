@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/domain"
 	"sync"
 )
 

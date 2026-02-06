@@ -2,8 +2,8 @@ package controller
 
 import (
 	"context"
-	"statectl/internal/domain"
-	"statectl/internal/infra/fake"
+	"github.com/arthurrso/statectl/internal/domain"
+	"github.com/arthurrso/statectl/internal/infra/fake"
 	"testing"
 )
 
